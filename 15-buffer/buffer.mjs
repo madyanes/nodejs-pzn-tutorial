@@ -1,9 +1,9 @@
+// Ref: https://nodejs.org/docs/latest-v12.x/api/buffer.html
+
 import { Buffer } from 'buffer'
 
-const buffer = Buffer.from('Madyan Eka Septian', 'utf8')
+const buffer = Buffer.from('Madyan Eka Septian')
+console.info(buffer.toString()) // utf8 by default
 
-console.info(buffer)
-console.info(buffer.toString())
-
-buffer.reverse()
-console.info(buffer.toString())
+const bufferBase64 = Buffer.from('TWFkeWFuIEVrYSBTZXB0aWFu', 'base64')
+console.info(bufferBase64.toString()) // utf8 by default
