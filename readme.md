@@ -1,3 +1,9 @@
+# Node.js version used
+```bash
+node --version # v18.16.0
+npm --version # 9.5.1
+```
+
 # How to run the code
 ```bash
 node dir/file.mjs
